@@ -48,19 +48,23 @@ export default function AppDrawer() {
     >
       <List>
         {topMenu.map((menuItem) => (
-          <ListItem button key={menuItem.title}>
-            <ListItemIcon>{menuItem.icon}</ListItemIcon>
-            <Link to={menuItem.link}><ListItemText primary={menuItem.title} /></Link>
-          </ListItem>
+          <Link to={menuItem.link}>
+            <ListItem button key={menuItem.title}>
+              <ListItemIcon>{menuItem.icon}</ListItemIcon>
+              <ListItemText primary={menuItem.title} />
+            </ListItem>
+          </Link>
         ))}
       </List>
       <Divider />
       <List>
         {bottomMenu.map((menuItem) => (
-          <ListItem button key={menuItem.title}>
-            <ListItemIcon>{menuItem.icon}</ListItemIcon>
-            <Link to={menuItem.link}><ListItemText primary={menuItem.title} /></Link>
-          </ListItem>
+          <Link to={menuItem.link}>
+            <ListItem button key={menuItem.title}>
+              <ListItemIcon>{menuItem.icon}</ListItemIcon>
+              <ListItemText primary={menuItem.title} />
+            </ListItem>
+          </Link>
         ))}
       </List>
     </div>

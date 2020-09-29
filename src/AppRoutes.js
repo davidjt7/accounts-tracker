@@ -15,9 +15,6 @@ const AppRoutes = () => {
         <Router>
             <AppDrawer />
             <Switch>
-                <Route path="/">
-                    <Home />
-                </Route>
                 <Route path="/accounts/month">
                     <AccountsForTheMonth />
                 </Route>
@@ -26,6 +23,9 @@ const AppRoutes = () => {
                 </Route>
                 <Route path="/accounts/fy">
                     <AccountsForTheFinancialYear />
+                </Route>
+                <Route path="/">
+                    <Home />
                 </Route>
             </Switch>
         </Router>

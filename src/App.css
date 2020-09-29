@@ -179,3 +179,8 @@ input[type='number'] {
   top: 10px;
   left: 0px;
 }
+
+.quote {
+  margin-top: 40px;
+  width: 350px;
+}
