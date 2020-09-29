@@ -7,8 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const SaveTransactions = () => {
     const { transactions } = useContext(GlobalContext);
-    console.log(transactions);
-
     return (
         <>
             <div className="download">
