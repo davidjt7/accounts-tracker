@@ -12,4 +12,4 @@ yarn start
 # Build for prod
 yarn run build
 ```
-
+Add firebase config in firebase.js
