@@ -22,6 +22,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -183,4 +184,8 @@ input[type='number'] {
 .quote {
   margin-top: 40px;
   width: 350px;
+}
+
+.space-top {
+  padding-top: 40px;
 }

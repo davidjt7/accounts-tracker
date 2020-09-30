@@ -10,7 +10,7 @@ import { LoadTransactions } from '../components/LoadTransactions';
 
 export const AccountsForTheMonth = () => {
     return (
-        <>
+        <div className="space-top">
             <LoadTransactions />
             <Header />
             <SaveTransactions />
@@ -20,6 +20,6 @@ export const AccountsForTheMonth = () => {
                 <TransactionList />
                 <AddTransaction />
             </div>
-        </>
+        </div>
     );
 };
