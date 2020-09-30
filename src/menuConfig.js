@@ -2,6 +2,7 @@ import React from 'react';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import AssessmentIcon from '@material-ui/icons/Assessment';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import HomeIcon from '@material-ui/icons/Home';
 
 export const topMenu = [
@@ -12,4 +13,5 @@ export const topMenu = [
 
 export const bottomMenu = [
     { title: 'Current Month', icon: <AccountBalanceIcon />, link: '/accounts/month' },
+    { title: 'Previous Month', icon: <AccountBalanceWalletIcon />, link: '/accounts/month/old' }
 ];

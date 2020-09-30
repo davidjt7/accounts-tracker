@@ -7,6 +7,7 @@ import {
 import AppDrawer from './components/AppDrawer';
 import { Home } from './screens/Home';
 import { AccountsForTheMonth } from './screens/AccountsForTheMonth';
+import { AccountsForOlderMonth } from './screens/AccountsForOlderMonth'
 import { AccountsForTheYear } from './screens/AccountsForTheYear';
 import { AccountsForTheFinancialYear } from './screens/AccountsForTheFinancialYear';
 
@@ -15,6 +16,9 @@ const AppRoutes = () => {
         <Router>
             <AppDrawer />
             <Switch>
+                <Route path="/accounts/month/old">
+                    <AccountsForOlderMonth />
+                </Route>
                 <Route path="/accounts/month">
                     <AccountsForTheMonth />
                 </Route>
