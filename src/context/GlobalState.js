@@ -20,7 +20,7 @@ export const GlobalProvider = ({ children }) => {
       .then((doc) => {
         dispatch({
           type: 'LOAD_TRANSACTIONS',
-          payload: doc.data().transactions
+          payload: doc.data()?.transactions || []
         });
       })
   }
